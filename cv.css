@@ -1,0 +1,110 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins',sans-serif;
+	box-sizing: border-box;
+}
+body{
+	background: #080808;
+	color: #fff;
+	
+
+   
+}
+
+#resume{
+	padding: 70px 0;
+	}
+	.about-resume-1 subtitle{
+
+	}
+	h1{
+		margin: 10px;
+	}
+	.btn{
+		padding: 10px;
+		margin: 0;
+		color: white;
+		background: gray;
+		transition: 0.5s;
+
+	}
+	.btn:hover{
+		color: #ff004f;
+	}
+.qualification-list{
+	margin: 10pz;
+	margin:300px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+	grid-gap: 40px;
+	margin-top: 40px;
+
+}
+.qualification-list a{
+	text-decoration: none;
+	text-align: center;
+	background: #ff004f;
+	border-radius: 10px;
+	padding: 15px;
+	transition: 0.5s;
+}
+.qualification-list a:hover{
+	color: green;
+}
+.qualification-list div{
+	background: #262626;
+	padding: 10px;
+	font-weight: 10px;
+	font-size: 15px;
+	border-radius: 10px;
+	text-align: center;
+	transition: background 0.5s,transform 0.5s
+
+}
+.qualification-list div h2{
+	font-size: 15px;
+	font-weight: 00;
+	margin-top: 15px;
+}
+.qualification-list div a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	margin-top: 20px;
+	display: inline-block;
+}
+.qualification-list div:hover{
+	background: #ff044f;
+	transform: translate(-10px);
+}
+.qualification-list h1{
+	padding: 30px;
+}
+
+
+@media only screen and (max-width :700px){
+	#resume{
+		margin:10px;
+		padding:0;
+	
+
+		}
+		.qualification-list{
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+
+
+
+/*.project-list{
+	margin: 10pz;
+	margin:300px;
+	display: grid;
+	
+	grid-gap: 40px;
+	margin-top: 40px;
+}
+*/
