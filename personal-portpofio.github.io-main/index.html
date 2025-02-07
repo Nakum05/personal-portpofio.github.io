@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pesonal Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/6ab98f27bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+	<div id="header">
+		<div class="container">
+		<nav>
+			<img src="image/logo.jpg" class="logo">
+			<ul id="sidemenu">
+
+				<li><a href="#header">Home</a></li>
+				<li><a href="project.html">Project</a></li>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="cv.html">CV</a></li>
+				<li><a href="qualification.html">Qualification</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+			</ul>
+			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+		</nav>
+		<div class="header-text">
+			<p> <b>Andriod/IOS</b> Mobile Application Devloper</p>
+			<h1>Hi I'm<span> Jiten Nakum.</span><br></h1>
+
+			
+		</div>
+	    </div>
+	</div>
+
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="image/about.png">
+				</div>
+				<div class="about-col-2">
+					<h1 class="subtitle">About Me</h1>
+					<p>My Name is <b>Jiten Nakum</b> And <br>
+						I'm a <b>Andriod/IOS Mobile Application Devloper.</b></p><br>
+						<p> Passionate and Dedicateded IT Student<br> with a keen interest in Application Devlopment.</p><br>
+						<p><b>Skilled</b> in Andriod Java,Firebase, Flutter <a href="cv.html">Known More</a></p>
+						<br>
+							<p>Enthusiastic about Exploring new Technologies and Frameworks to enhance App Devlopment experience.</p>
+							<br>
+							<p>Committed to continuous Learning and Growth the field of App Devlopment</p>
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+	<div id="resume">
+		<div class="container">
+			
+				<div class="about-resume-1">
+					<h1 class="subtitle">Qualification</h1>
+					<div class="qualification-list">
+						<div>
+							
+							<h2> Degree in Computer</h2><p> 2021-2024</p>
+							<a href="qualification.html">More Info</a>
+
+
+						</div>
+						<div>
+						
+							<h2>Diploma in computer</h2><p>2018-2021</p>
+							<a href="qualification.html">More Info</a>
+						</div>
+						<div>
+							
+							<h2>10th (GSEB)</h2><p>2017-2018</p>
+							<br>
+							<br>
+								<a href="qualification.html">More Info</a>
+
+							</h2>
+						</div>
+					</div>
+
+
+					</p>
+
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!---------contactme--->
+
+	<script>
+		var sidemenu =document.getElementById("sidemenu");
+
+		function openmenu(){
+			sidemenu.style.right="0";
+		}
+		function closemenu(){
+			sidemenu.style.right="-200px"
+		}
+
+	</script>
+	
+</body>
+</html>
