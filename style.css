@@ -34,6 +34,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .logo {
@@ -42,10 +43,12 @@ nav {
 }
 
 /* Nav Menu */
-nav ul li {
-  display: inline-block;
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   list-style: none;
-  margin: 10px 20px;
+  transition: right 0.5s;
 }
 
 nav ul li a {
@@ -215,9 +218,11 @@ nav ul li a:hover::after {
   to { opacity: 1; transform: scale(1); }
 }
 
-/* ---------------- MOBILE VIEW ---------------- */
-nav .fa-solid {
-  display: none;
+/* ---------------- RESPONSIVE ---------------- */
+nav .fa-bars {
+  display: none; /* Hidden on desktop */
+  font-size: 25px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 700px) {
@@ -234,33 +239,38 @@ nav .fa-solid {
     font-size: 30px;
   }
 
-  nav .fa-solid {
+  /* Show bars on mobile */
+  nav .fa-bars {
     display: block;
-    font-size: 25px;
-    cursor: pointer;
   }
 
+  /* Slide-in menu */
   nav ul {
+    flex-direction: column;
     background: #ff004f;
     position: fixed;
     top: 0;
-    right: -200px;
-    width: 200px;
+    right: -250px;
+    width: 250px;
     height: 100vh;
     padding-top: 50px;
-    z-index: 2;
+    gap: 30px;
     transition: right 0.5s;
+    z-index: 999;
   }
 
   nav ul li {
     display: block;
-    margin: 25px;
+    margin: 20px;
   }
 
-  nav ul .fa-solid {
+  /* Close icon inside menu */
+  nav ul li .fa-xmark {
     position: absolute;
-    top: 25px;
-    left: 25px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 22px;
   }
 
   .subtitle {
