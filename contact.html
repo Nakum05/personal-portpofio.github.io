@@ -3,58 +3,80 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="contact.css">
-  <title>contact form</title>
+  <title>Contact Info</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #080808;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .contact-card {
+      background: #1a1a1a;
+      padding: 40px 30px;
+      border-radius: 15px;
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact-card h1 {
+      margin-bottom: 10px;
+      color: #04AA6D;
+    }
+
+    .contact-card p {
+      margin: 15px 0;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .contact-card a {
+      color: #ff004f;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .contact-card a:hover {
+      color: #04AA6D;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .contact-card {
+        padding: 30px 20px;
+      }
+      .contact-card p {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
- <div class="container">
-  <h1>Get in Touch</h1>
-  <h3> Let's Work Together!</h3>
-  <h2>Directly Contact to me whatsapp No: 9924431761 </h2>
-  <form name="submit-to-google-sheet">
 
-
-    <label for="fname">First Name</label><br>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-<br>
-    <label for="lname">Last Name</label><br>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-<br>
-  <label for="email">Email</label><br>
-  <input type="text" id="email" name="Email" placeholder="Your Email" >
-    
-<br>
-    <label for="subject">Subject</label><br>
-    <textarea id="subject" type="text" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-<br>
-    <input align="right" type="submit" value="Submit" >
-    
-    <a href="index.html">Back</a>
-
-  </form>
-  <span id="msg"></span>
-</div>
-
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyU9sKDOmGGnS1r9lrTLYjfNIFcC8BFnD79PTh5pS-RDxyeT6EVlZ2ysN9OLXnz4uIp/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg =document.getElementById('msg')
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML="message sent"
-        setTimeout(function(){
-          msg.innerHTML=""
-        },5000)
-        form.reset()
-      })
-
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
+  <div class="contact-card">
+    <h1>Get in Touch</h1>
+    <p>📱 WhatsApp: <a href="https://wa.me/9924431761" target="_blank">9924431761</a></p>
+    <p>📧 Email: <a href="mailto:jitennakum.ja@gmail.com">jitennakum.ja@gmail.com</a></p>
+    <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/jiten-nakum-532295198" target="_blank">View Profile</a></p>
+  </div>
 
 </body>
 </html>
