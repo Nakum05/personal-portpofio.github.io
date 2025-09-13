@@ -1,172 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Personal Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://kit.fontawesome.com/6ab98f27bb.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Portfolio - Jiten Nakum</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/6ab98f27bb.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	
-	<div id="header">
-		<div class="container">
-		<nav>
-			<img src="image/logo.jpg" class="logo">
-			<ul id="sidemenu">
+  
+  <!-- HEADER -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="image/logo.jpg" class="logo" alt="Logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="qualification.html">Qualification</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
 
-				<li><a href="#header">Home</a></li>
-				<li><a href="#about">About Me</a></li>
-				<li><a href="cv.html">CV</a></li>
-				<li><a href="qualification.html">Qualification</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-			</ul>
-			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
-		</nav>
-		<div class="header-text">
-			<p> <b>Flutter </b>Developer</p>
-			<h1>Hi I'm<span> Jiten Nakum.</span><br></h1>
-		</div>
-	    </div>
-	</div>
+      <div class="header-text fade-in">
+        <p><b>Flutter Developer</b></p>
+        <h1>Hi, I'm <span class="highlight">Jiten Nakum</span></h1>
+        <h3 class="typing"></h3>
+      </div>
+    </div>
+  </div>
 
-	<div id="about">
-		<div class="container">
-			<div class="row">
-				<div class="about-col-1">
-					<img src="image/about.png">
-				</div>
-				<div class="about-col-2">
-					<h1 class="subtitle">About Me</h1>
-					<p>My Name is <b>Jiten Nakum</b> And <br>
-						I'm a <b>Flutter Developer.</b></p><br>
-						<p> Passionate and Dedicated IT Student<br> with a keen interest in Application Development.</p><br>
-						<p><b>Skilled</b> in Android Java, Firebase, Flutter, Dart <a href="cv.html">Known More</a></p>
-						<br>
-							<p>Enthusiastic about Exploring new Technologies and Frameworks to enhance App Development experience.</p>
-							<br>
-							<p>Committed to continuous Learning and Growth in the field of App Development.</p>
-				</div>
-			</div>
-		</div>
-	</div>
+  <!-- ABOUT -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1 slide-left">
+          <img src="image/about.png" alt="About Image">
+        </div>
+        <div class="about-col-2 slide-right">
+          <h1 class="subtitle">About Me</h1>
+          <p>
+            I am <b>Jiten Nakum</b>, a passionate <b>Flutter Developer</b> with <b>1.5+ years of experience</b> 
+            in building <b>e-commerce, CRM, EMS</b>, and UK-based service applications. Skilled in 
+            <b>Flutter, Dart, Firebase, API integration</b>, and UI/UX design, I specialize in delivering 
+            functional, scalable, and user-friendly apps.
+          </p>
+          <p>
+            I have worked on <b>jewellery e-commerce</b>, <b>faucet apps</b>, <b>UK clothing e-commerce</b>, 
+            and custom <b>residency management portals</b>. I enjoy taking projects from idea to 
+            deployment on Play Store and App Store.
+          </p>
+          <a href="cv.html" class="link">Know More →</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	<!-- Experience Section -->
-	<div id="experience">
-		<div class="container">
-			<h1 class="subtitle">Experience</h1>
-			<div class="experience-list">
-				<div>
-					<h2>Flutter Developer</h2>
-					<p><strong>SVIPL</strong> | june 2024 - Present</p>
-					<p>Developed and maintained mobile applications using Flutter and Firebase for a social networking project.</p>
-					<p><b>Skills Used:</b> Flutter, Dart, Firebase, REST APIs</p>
-				</div>
-				<br>
-				<div>
-					<h2>Android/FLutter Developer</h2>
-					<p><strong>RK infotech</strong> | Jan 2024 - may 2024</p>
-					<p>Worked on building Android applications using Flutter Like Delight ERP and CRM APPLication</p>
-					<p><b>Skills Used:</b> Flutter,Dart, Android Studio, Firebase, REST APIs</p>
-				</div>
-				<br>
-				<div>
-					<h2>Android/FLutter Developer-intern</h2>
-					<p><strong>RK infotech</strong> | Dec 2023 - jan 2024</p>
-					<p>Understanding How to worked live Project and some basic techniqe and learnt basic programming</p>
-					<p><b>Skills Learnt:</b> Flutter,Dart, Android Studio,java,oop, Firebase, REST APIs</p>
-				</div>
-				<br>
-				<div>
-					<h2>Android/FLutter Developer-intern</h2>
-					<p><strong>Mayora Infotech</strong> | Aug 2023 - Aug 2024</p>
-					<p>Here i was starting my carrer in Mobile Application Developer. and maked simple learning application YourSelf</p>
-					<p><b>Skills Learnt:</b> Java,APP life cycle,andorid Studio,firebase etc</p>
-				</div>
-				 
-			</div>
-		</div>
-	</div>
+  <!-- QUALIFICATION -->
+  <div id="resume">
+    <div class="container">
+      <h1 class="subtitle">Qualification</h1>
+      <div class="qualification-list">
+        <div class="qualification-card zoom-in">
+          <h2>Bachelor in Computer</h2>
+          <p>2021 - 2024</p>
+          <a href="qualification.html">More Info</a>
+        </div>
+        <div class="qualification-card zoom-in">
+          <h2>Diploma in Computer</h2>
+          <p>2018 - 2021</p>
+          <a href="qualification.html">More Info</a>
+        </div>
+        <div class="qualification-card zoom-in">
+          <h2>10th (GSEB)</h2>
+          <p>2017 - 2018</p>
+          <a href="qualification.html">More Info</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	<!-- Project Section -->
-	<div id="experience">
-		<div class="container">
-			<h1 class="subtitle">Projects</h1>
-			<div class="experience-list">
-			
- 				<div>
-					<h2>Project1: Delight CRM</h2>
-					<p><strong>Company Project</strong> </p>
-					<p>Delight CRM app is Contained so many module. but i have written only that i was worked and maked moduled. 1. Leave Module 2. attendance Module 3.Implementing Search FUnctionality 4. APp Published on Play Store.</p>
-					<p><b>Technologies:</b> Flutter,Dart,  Firebase, Server , API, Portal management</p>
-				</div>
-				<br>
-				<div>
-					<h2>Project2: Delight ERP</h2>
-					<p><strong>Company Project</strong></p>
-					<p>I was worked on this module 1. product sell and buy customer 2. quntity management of product with stock 3.order management</p>
-					<p><b>Technologies:</b> Flutter,Dart , API, Sever based</p>
-				</div>
-					<br>
-				<div>
-					<h2>Project3: ShraddhaOrnament</h2>
-					<p><strong>Company Project</strong></p>
-					<p>Module that i am working: 1. Login Module 2.cart management. 3. notification 4.order management 5.history management/Purchase list management</p>
-					<p><b>Technologies:</b> Flutter,Dart , API, Sever based,portal</p>
-				</div>
-				<br>
-				<div>
-					<h2>Project4: OmShivEnterprise</h2>
-					<p><strong>Company Project</strong></p>
-					<p>This full application develop by me only. contained module of 1. product management 2.login/register 3.brand management 4.sub-category of brand 5.order management 6.cart management etc</p>
-					<p><b>Technologies:</b> Flutter,Dart , API, Sever based,portal</p>
-				</div>
-				<br>
-				<br>
-				<div>
-					<h2>Project5: Rojamdar</h2>
-					<p><strong>Personal Project</strong> working/OnGoing</p>
-					<p>This Project develping OnGoing</p>
-					<p><b>Technologies:</b> Flutter,Dart.</p>
-				</div>
-				<br>
-			</div>
-		</div>
-	</div>
+  <!-- JS -->
+  <script>
+    // Side Menu
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() { sidemenu.style.right = "0"; }
+    function closemenu() { sidemenu.style.right = "-200px"; }
 
-	<div id="resume">
-		<div class="container">
-			<div class="about-resume-1">
-				<h1 class="subtitle">Qualification</h1>
-				<div class="qualification-list">
-					<div>
-						<h2>B.E. in Computer Science & Engineering</h2><p>2021-2024</p>
-						<a href="qualification.html">More Info</a>
-					</div>
-					<div>
-						<h2>Diploma in Computer Science</h2><p>2018-2021</p>
-						<a href="qualification.html">More Info</a>
-					</div>
-					<div>
-						<h2>10th (GSEB)</h2><p>2017-2018</p>
-						<a href="qualification.html">More Info</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<script>
-		var sidemenu = document.getElementById("sidemenu");
-
-		function openmenu() {
-			sidemenu.style.right = "0";
-		}
-		function closemenu() {
-			sidemenu.style.right = "-200px";
-		}
-	</script>
-	
+    // Typing Effect
+    const texts = ["Flutter Developer","Android Developer", "Mobile App Developer", "Flutter Enthusiast", "Problem Solver"];
+    let count = 0, index = 0, currentText = "", letter = "";
+    (function type(){
+      if (count === texts.length) count = 0;
+      currentText = texts[count];
+      letter = currentText.slice(0, ++index);
+      document.querySelector(".typing").textContent = letter;
+      if(letter.length === currentText.length){
+        count++;
+        index = 0;
+        setTimeout(type, 1000);
+      } else {
+        setTimeout(type, 100);
+      }
+    })();
+  </script>
 </body>
 </html>
