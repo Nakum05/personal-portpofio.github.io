@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link id="favicon" rel="shortcut icon" href="../assets/jiten-mark.jpg" type="image/jpeg">
+    <title>Projects | Portfolio Jiten Nakum</title>
+</head>
+<body>
+<header>
+    <a href="../#home" class="logo"><img src="../assets/jiten-mark.jpg" alt=""> Jiten</a>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../#home">Home</a></li>
+            <li><a href="../#about">About</a></li>
+            <li><a href="../#skills">Skills</a></li>
+            <li><a href="../#education">Education</a></li>
+            <li><a class="active" href="../#work">Work</a></li>
+            <li><a href="../#experience">Experience</a></li>
+            <li><a href="../#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="work" id="work">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+    <p class="study-note">The pictures are interface studies, not store screenshots.</p>
+    <div id="filters" class="button-group">
+        <button class="btn is-checked" data-filter="*">All Projects</button>
+        <button class="btn" data-filter=".flitzen">Flitzen</button>
+        <button class="btn" data-filter=".svipl">SVIPL</button>
+        <button class="btn" data-filter=".intern">Internship</button>
+        <button class="btn" data-filter=".freelance">Freelance</button>
+    </div>
+    <div class="box-container">
+        <div class="grid-item flitzen" id="uk-clothing">
+            <div class="box tilt">
+                <img draggable="false" src="../assets/fashion.jpg" alt="UK clothing app">
+                <div class="content">
+                    <div class="tag"><h3>UK clothing app</h3></div>
+                    <div class="desc">
+                        <p>Flutter shop for a UK team. WooCommerce, then release.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item flitzen" id="trading">
+            <div class="box tilt">
+                <img draggable="false" src="../assets/trading.jpg" alt="Trading app">
+                <div class="content">
+                    <div class="tag"><h3>Trading app</h3></div>
+                    <div class="desc">
+                        <p>Flutter trading app, released with the clothing shop.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item freelance" id="hire-local">
+            <div class="box tilt">
+                <img draggable="false" src="../assets/mechanical.jpg" alt="Hire Local Worker">
+                <div class="content">
+                    <div class="tag"><h3>Hire Local Worker</h3></div>
+                    <div class="desc">
+                        <p>Electrician, plumber, and AC repair. Jobs, visits, and status.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item flitzen" id="ems">
+            <div class="box tilt">
+                <img draggable="false" src="../assets/ems.jpg" alt="Business apps">
+                <div class="content">
+                    <div class="tag"><h3>Business apps</h3></div>
+                    <div class="desc">
+                        <p>UK CRM, construction site management, and apps for small and medium businesses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item svipl" id="ornament">
+            <div class="box tilt">
+                <img draggable="false" src="../assets/ornament.jpg" alt="Ornament app">
+                <div class="content">
+                    <div class="tag"><h3>Shraddha Ornament</h3></div>
+                    <div class="desc">
+                        <p>Jewellery shop. Catalogue, checkout, and the API.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item svipl" id="faucet">
+            <div class="box tilt">
+                <img draggable="false" src="../assets/erp.jpg" alt="Faucet commerce app">
+                <div class="content">
+                    <div class="tag"><h3>Faucet shop</h3></div>
+                    <div class="desc">
+                        <p>Fittings shop, built beside Shraddha Ornament.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item intern" id="crm">
+            <div class="box tilt">
+                <img draggable="false" src="../assets/crm.jpg" alt="CRM and ERP apps">
+                <div class="content">
+                    <div class="tag"><h3>Delight CRM and ERP</h3></div>
+                    <div class="desc">
+                        <p>Customer and operations tools from my internship at RK Infotech, on Android and Flutter.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item freelance" id="residency">
+            <div class="box tilt">
+                <img draggable="false" src="../assets/residency.jpg" alt="Residency portal">
+                <div class="content">
+                    <div class="tag"><h3>Hostel management</h3></div>
+                    <div class="desc">
+                        <p>Freelance. Students, fees, branches and search, with export to Excel and PDF. Built in Flutter and Dart.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="backbtn">
+        <a href="../#work" class="btn">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to Home</span>
+        </a>
+    </div>
+</section>
+
+<a href="#work" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./script.js"></script>
+</body>
+</html>

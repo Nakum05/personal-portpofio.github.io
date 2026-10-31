@@ -1,111 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Personal Portfolio - Jiten Nakum</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/6ab98f27bb.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hi, I'm Jiten Nakum, a Flutter developer. I build apps with Firebase and AI, from Rajkot, for UK and Indian teams.">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link id="favicon" rel="shortcut icon" href="./assets/jiten-mark.jpg" type="image/jpeg">
+    <title>Portfolio | Jiten Nakum</title>
 </head>
 <body>
-  
-  <!-- HEADER -->
-  <div id="header">
-    <div class="container">
-      <nav>
-        <img src="image/logo.jpg" class="logo" alt="Logo">
-        <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="cv.html">CV</a></li>
-          <li><a href="qualification.html">Qualification</a></li>
-          <li><a href="contact.html">Contact</a></li>
-         </ul>
-        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-      </nav>
+<header>
+    <a href="#home" class="logo"><img src="assets/jiten-mark.jpg" alt=""> Jiten</a>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-      <div class="header-text fade-in">
-        <p><b>Flutter Developer</b></p>
-        <h1>Hi, I'm <span class="highlight">Jiten Nakum</span></h1>
-        <h3 class="typing"></h3>
-      </div>
+<section class="home" id="home">
+    <div id="particles-js"></div>
+    <div class="content">
+        <p class="role">Flutter developer · AI · build</p>
+        <h2>Hi there,<br> I'm Jiten <span>Nakum</span></h2>
+        <p class="into">i am into <span class="typing-text"></span></p>
+        <p class="line">Flutter apps with AI integration, from the first screen to release.</p>
+        <div class="actions">
+            <a href="#work" class="btn"><span>See the work</span>
+                <i class="fas fa-arrow-circle-down"></i>
+            </a>
+            <a href="#contact" class="btn btn-line"><span>Talk to me</span></a>
+        </div>
+        <div class="socials">
+            <ul class="social-icons">
+                <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/jiten-nakum-532295198" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a></li>
+                <li><a class="github" aria-label="GitHub" href="https://github.com/Nakum05" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a></li>
+                <li><a class="whatsapp" aria-label="WhatsApp" href="https://wa.me/919924431761" target="_blank" rel="noreferrer"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a class="mail" aria-label="Email" href="mailto:jitennakum.ja@gmail.com"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
     </div>
-  </div>
-
-  <!-- ABOUT -->
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-1 slide-left">
-          <img src="image/about.png" alt="About Image">
+    <div class="image">
+        <div class="portrait">
+            <video autoplay muted loop playsinline poster="assets/hello-wave.jpg">
+                <source src="assets/hello-wave.mp4" type="video/mp4">
+            </video>
         </div>
-        <div class="about-col-2 slide-right">
-          <h1 class="subtitle">About Me</h1>
-          <p>
-            I am <b>Jiten Nakum</b>, a passionate <b>Flutter Developer</b> with <b>1.5+ years of experience</b> 
-            in building <b>e-commerce, CRM, EMS</b>, and UK-based service applications. Skilled in 
-            <b>Flutter, Dart, Firebase, API integration</b>, and UI/UX design, I specialize in delivering 
-            functional, scalable, and user-friendly apps.
-          </p>
-          <p>
-            I have worked on <b>jewellery e-commerce</b>, <b>faucet apps</b>, <b>UK clothing e-commerce</b>, 
-            and custom <b>residency management portals</b>. I enjoy taking projects from idea to 
-            deployment on Play Store and App Store.
-          </p>
-          <a href="cv.html" class="link">Know More →</a>
-        </div>
-      </div>
     </div>
-  </div>
+</section>
 
-  <!-- QUALIFICATION -->
-  <div id="resume">
-    <div class="container">
-      <h1 class="subtitle">Qualification</h1>
-      <div class="qualification-list">
-        <div class="qualification-card zoom-in">
-          <h2>Bachelor in Computer</h2>
-          <p>2021 - 2024</p>
-          <a href="qualification.html">More Info</a>
+<section class="reel" aria-label="App development">
+    <video autoplay muted loop playsinline>
+        <source src="assets/tech-desk.mp4" type="video/mp4">
+    </video>
+</section>
+
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    <div class="row">
+        <div class="image">
+            <img draggable="false" class="tilt" src="image/jiten-stand.jpg" alt="Jiten Nakum">
         </div>
-        <div class="qualification-card zoom-in">
-          <h2>Diploma in Computer</h2>
-          <p>2018 - 2021</p>
-          <a href="qualification.html">More Info</a>
+        <div class="content">
+            <h3>Flutter developer</h3>
+            <p>I take an app from the first screen to the store. English, UK hours, Rajkot.</p>
+            <ul class="proof">
+                <li><strong>Flutter</strong><span>Dart, GetX, and Firebase, through to a live release.</span></li>
+                <li><strong>The products</strong><span>UK CRM, construction sites, shops, and small-business apps.</span></li>
+                <li><strong>Build</strong><span>Flutter apps, with AI inside when the product needs it.</span></li>
+            </ul>
+            <div class="box-container">
+                <div class="box">
+                    <p><span> email : </span> <a class="keep-case" href="mailto:jitennakum.ja@gmail.com">jitennakum.ja@gmail.com</a></p>
+                    <p><span> place : </span> Rajkot, Gujarat</p>
+                </div>
+            </div>
+            <div class="resumebtn">
+                <a href="assets/Jiten-Nakum-Flutter-Developer.pdf" class="btn" download><span>Resume</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
         </div>
-        <div class="qualification-card zoom-in">
-          <h2>10th (GSEB)</h2>
-          <p>2017 - 2018</p>
-          <a href="qualification.html">More Info</a>
-        </div>
-      </div>
     </div>
-  </div>
+    <div class="shots">
+        <img src="image/jiten-smile.jpg" alt="Jiten Nakum">
+        <img src="image/jiten-sit.jpg" alt="Jiten Nakum on a rooftop">
+        <img class="face-high" src="image/jiten-stand.jpg" alt="Jiten Nakum standing">
+        <img src="image/jiten-garden.jpg" alt="Jiten Nakum outdoors">
+    </div>
+</section>
 
-  <!-- JS -->
-  <script>
-    // Side Menu
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu() { sidemenu.style.right = "0"; }
-    function closemenu() { sidemenu.style.right = "-200px"; }
+<section class="skills" id="skills">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+    <p class="note">Flutter first. AI where the user actually needs it.</p>
+    <div class="container">
+        <div class="row" id="skillsContainer">
+            <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/flutter.png" alt=""><span>Flutter</span></div></div>
+            <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/dart.png" alt=""><span>Dart</span></div></div>
+            <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/firebase.png" alt=""><span>Firebase</span></div></div>
+            <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/database.png" alt=""><span>Firestore</span></div></div>
+            <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/key.png" alt=""><span>Firebase Auth</span></div></div>
+            <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/source-code.png" alt=""><span>GetX</span></div></div>
+            <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/api.png" alt=""><span>REST API</span></div></div>
+            <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/figma.png" alt=""><span>UI Design</span></div></div>
+            <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/git.png" alt=""><span>Git</span></div></div>
+            <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/google-play.png" alt=""><span>Play Store</span></div></div>
+            <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/apple-app-store--v1.png" alt=""><span>App Store</span></div></div>
+            <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt=""><span>WhatsApp</span></div></div>
+            <div class="bar"><div class="info"><img src="https://img.icons8.com/fluency/48/artificial-intelligence.png" alt=""><span>AI in apps</span></div></div>
+            <div class="bar"><div class="info"><img src="https://img.icons8.com/fluency/48/cursor.png" alt=""><span>Cursor AI</span></div></div>
+            <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/sparkling.png" alt=""><span>AI creation</span></div></div>
+        </div>
+    </div>
+</section>
 
-    // Typing Effect
-    const texts = ["Flutter Developer","Android Developer", "Mobile App Developer", "Flutter Enthusiast", "Problem Solver"];
-    let count = 0, index = 0, currentText = "", letter = "";
-    (function type(){
-      if (count === texts.length) count = 0;
-      currentText = texts[count];
-      letter = currentText.slice(0, ++index);
-      document.querySelector(".typing").textContent = letter;
-      if(letter.length === currentText.length){
-        count++;
-        index = 0;
-        setTimeout(type, 1000);
-      } else {
-        setTimeout(type, 100);
-      }
-    })();
-  </script>
+<section class="education" id="education">
+    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img draggable="false" src="assets/images/educat/degree.svg" alt="S.L.T.I.E.T, Rajkot">
+            </div>
+            <div class="content">
+                <h3>Bachelor of Engineering in Computer Science</h3>
+                <p>Shri Labhubhai Trivedi Institute of Engineering and Technology, Rajkot</p>
+                <h4>2021-2024 | Completed</h4>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img draggable="false" src="assets/images/educat/diploma.svg" alt="A.V. Parekh Technical Institute">
+            </div>
+            <div class="content">
+                <h3>Diploma in Computer Engineering</h3>
+                <p>A.V. Parekh Technical Institute | Rajkot | CGPA 7.84</p>
+                <h4>2018-2021 | Completed</h4>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img draggable="false" src="assets/images/educat/school.svg" alt="Alpha High School">
+            </div>
+            <div class="content">
+                <h3>Secondary School | GSEB</h3>
+                <p>Alpha High School | Khambhalia | 82.55 percentile</p>
+                <h4>2017-2018 | Completed</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="work" id="work">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+    <p class="study-note">The pictures are interface studies, not store screenshots.</p>
+    <div class="box-container">
+        <div class="box tilt">
+            <img draggable="false" src="assets/fashion.jpg" alt="UK clothing app">
+            <div class="content">
+                <div class="tag"><h3>UK clothing app</h3></div>
+                <div class="desc">
+                    <p>Flutter shop for a UK team. WooCommerce, then release.</p>
+                    <div class="btns"><a href="projects/#uk-clothing" class="btn"><i class="fas fa-eye"></i> View</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="box tilt">
+            <img draggable="false" src="assets/trading.jpg" alt="Trading app">
+            <div class="content">
+                <div class="tag"><h3>Trading app</h3></div>
+                <div class="desc">
+                    <p>Flutter trading app, released with the clothing shop.</p>
+                    <div class="btns"><a href="projects/#trading" class="btn"><i class="fas fa-eye"></i> View</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="box tilt">
+            <img draggable="false" src="assets/mechanical.jpg" alt="Mechanical service app">
+            <div class="content">
+                <div class="tag"><h3>Hire Local Worker</h3></div>
+                <div class="desc">
+                    <p>Electrician, plumber, and AC repair. Jobs, visits, and status.</p>
+                    <div class="btns"><a href="projects/#hire-local" class="btn"><i class="fas fa-eye"></i> View</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="box tilt">
+            <img draggable="false" src="assets/ems.jpg" alt="Business apps">
+            <div class="content">
+                <div class="tag"><h3>Business apps</h3></div>
+                <div class="desc">
+                    <p>UK CRM, construction site management, and apps for small and medium businesses.</p>
+                    <div class="btns"><a href="projects/#ems" class="btn"><i class="fas fa-eye"></i> View</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="box tilt">
+            <img draggable="false" src="assets/ornament.jpg" alt="Ornament app">
+            <div class="content">
+                <div class="tag"><h3>Shraddha Ornament</h3></div>
+                <div class="desc">
+                    <p>Jewellery shop. Catalogue, checkout, and the API.</p>
+                    <div class="btns"><a href="projects/#ornament" class="btn"><i class="fas fa-eye"></i> View</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="box tilt">
+            <img draggable="false" src="assets/erp.jpg" alt="Faucet commerce app">
+            <div class="content">
+                <div class="tag"><h3>Faucet shop</h3></div>
+                <div class="desc">
+                    <p>Fittings shop, built beside Shraddha Ornament.</p>
+                    <div class="btns"><a href="projects/#faucet" class="btn"><i class="fas fa-eye"></i> View</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="viewall">
+        <a href="projects/" class="btn"><span>View All</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+<section class="experience" id="experience">
+    <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
+    <div class="timeline">
+        <div class="container right">
+            <div class="content">
+                <div class="tag">
+                    <h2><img src="assets/logos/flitzen.svg" alt=""> Flitzen Technologies</h2>
+                </div>
+                <div class="desc">
+                    <h3>Team Lead, Flutter</h3>
+                    <p>May 2025 - present</p>
+                </div>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <div class="tag">
+                    <h2><img class="on-dark" src="assets/logos/svipl-sticky.png" alt=""> SVIPL</h2>
+                </div>
+                <div class="desc">
+                    <h3>Flutter Developer</h3>
+                    <p>June 2024 - April 2025</p>
+                </div>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <div class="tag">
+                    <h2><img src="assets/logos/rk.png" alt=""> RK Infotech</h2>
+                </div>
+                <div class="desc">
+                    <h3>Android / Flutter Intern</h3>
+                    <p>Dec 2023 - May 2024</p>
+                </div>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <div class="tag">
+                    <h2><img src="assets/jiten-mark.jpg" alt=""> Freelance</h2>
+                </div>
+                <div class="desc">
+                    <h3>Hostel management</h3>
+                    <p>Freelance, Flutter and Dart</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="morebtn">
+        <a href="experience/" class="btn"><span>View All</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+    <div class="container">
+        <div class="content">
+            <div class="image-box">
+                <img draggable="false" src="./assets/images/contact1.png" alt="">
+            </div>
+            <form id="contact-form">
+                <div class="form-group">
+                    <div class="field">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="field">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="phone" placeholder="Phone">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="message">
+                        <textarea placeholder="Message" name="message" required></textarea>
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                </div>
+                <div class="button-area">
+                    <button type="submit">Submit <i class="fa fa-paper-plane"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Jiten's Portfolio</h3>
+            <p>Flutter Team Lead at Flitzen Technologies, Rajkot. I build Flutter apps for UK and Indian clients.<br><br> LinkedIn, GitHub and WhatsApp are the best ways to reach me.</p>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+            <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+            <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+            <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+            <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+            <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+        </div>
+        <div class="box">
+            <h3>contact info</h3>
+            <p><i class="fas fa-phone"></i> +91 99244 31761</p>
+            <p><i class="fas fa-envelope"></i> <a class="keep-case" href="mailto:jitennakum.ja@gmail.com">jitennakum.ja@gmail.com</a></p>
+            <p><i class="fas fa-map-marked-alt"></i> Rajkot, Gujarat</p>
+            <div class="share">
+                <a href="https://www.linkedin.com/in/jiten-nakum-532295198" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank" rel="noreferrer"></a>
+                <a href="https://github.com/Nakum05" class="fab fa-github" aria-label="GitHub" target="_blank" rel="noreferrer"></a>
+                <a href="mailto:jitennakum.ja@gmail.com" class="fas fa-envelope" aria-label="Mail"></a>
+                <a href="https://wa.me/919924431761" class="fab fa-whatsapp" aria-label="WhatsApp" target="_blank" rel="noreferrer"></a>
+            </div>
+        </div>
+    </div>
+    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/jiten-nakum-532295198"> Jiten Nakum</a></h1>
+</section>
+
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
-
